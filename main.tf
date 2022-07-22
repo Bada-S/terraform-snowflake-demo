@@ -2,10 +2,10 @@ terraform {
   required_version = ">= 0.15.0"
 
   backend "remote" {
-    organization = "tastydata"
+    organization = "jamessopkin"
 
     workspaces {
-      name = "snowflake-prod"
+      name = "snowflake"
     }
   }
 
@@ -21,10 +21,10 @@ data "terraform_remote_state" "core" {
   backend = "remote"
 
   config = {
-    organization = "tastydata"
+    organization = "jamessopkin"
 
     workspaces = {
-      name = "snowflake-prod"
+      name = "snowflake"
     }
   }
 }
