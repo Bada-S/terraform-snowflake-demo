@@ -2,5 +2,5 @@
 resource "snowflake_database" "raw_fivetran" {
   comment                     = "Unmodified source replicated data"
   data_retention_time_in_days = 1
-  name                        = "RAW_DB_FIVETRAN"
+  name                        = "RAW_FIVETRAN_DB"
 }

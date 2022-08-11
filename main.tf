@@ -8,9 +8,7 @@ terraform {
 }
 
 provider "snowflake" {
-  role = "SYSADMIN"
+  role     = "ACCOUNTADMIN"
+  region   = "us-east-2.aws"
 }
 
-resource "snowflake_database" "db" {
-  name = "FIVETRAN_DB"
-}
